@@ -1,0 +1,105 @@
+<html>
+<head>
+	<title>myWebsite</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div id="app">
+		<a name="up"></a>
+		<header>
+			<div class="myLogo"><a href="./index.htm">Eray TEKİN</a></div>
+			<nav>
+				<ul class="myNav">
+					<li><a href="./index.htm">Anasayfa</a></li>
+					<li><a href="./frontend.html">Front-end</a></li>
+					<li><a href="./plan.html">Plan</a></li>
+					<li><a href="./hakkımda.html">Hakkımda</a></li>
+					<li><a href="./iletisim.html">İletişim</a></li>
+				</ul>
+			</nav>
+			<i class="fa-solid fa-bars" id="hambMenu" @click="openToMenu"></i>
+		</header>
+		<!-- Responsive Menu -->
+		<div class="respMenu" v-if="isOpenMenu">
+			<div class="containerNav">
+				<ul class="respNav">
+					<li><a href="./index.htm">Anasayfa</a></li>
+					<li><a href="./frontend.html">Front-end</a></li>
+					<li><a href="./plan.html">Plan</a></li>
+					<li><a href="./hakkımda.html">Hakkımda</a></li>
+					<li><a href="./iletisim.html">İletişim</a></li>
+				</ul>
+			</div>	
+		</div> 
+		<div class="container my-5">
+			<h1>Front-end Nedir ? </h1>
+			<p>Back-end kısmı olarak veri tabanında kullanıcı datalarına sahip olmak güzel; ancak diğer yandan web sitenizin görüntüsünü iyi yapan şey ne? İşte bu noktada Front-end devreye giriyor. Ziyaret edilen her sayfa için güzel bir görünüm ve iyi bir his yaratıyor. Başka bir deyişle direkt etkileşime geçtiğiniz ve gözünüzle görebildiğiniz her sayfa için renk, fon ve diğer tüm stilleri oluşturuyor. Web sitesi kullanıcılarına marka kimliğini yansıtıp duygusal deneyim yaşatıyor.
+
+                Front-End için ise; HTML, CSS ve JavaScript programlama dilleri kullanılıyor. Bu programlama dilleri web sitesinin size yansıyan görünüşüne odaklanıyor. Front-End kısmında işleyişi şöyle bir hiyerarşik liste ile özetlemekte yarar var:
+                
+                UID (User Interface Designer – Kullanıcı Arayüzü Tasarımcısı ya da Web Arayüz Tasarımcısı) tarafından öncelikle grafik düzlemde web arayüz tasarımının hazırlanması,
+                UXD (User Experience Designer – Kullanıcı Deneyimi Tasarımcısı) tarafından UX geliştirmelerin ilk fazının tamamlanması,
+                Tasarımın / projenin Back-End Developer ve marka için anlamlı kılınması adına Wireframe olarak marka onayına sunulması.
+                
+                Burada bizler PDF formatta taslak çizim / sunum yerine, marka kurumsal kimliğini, görsel ve söylemlerini barındıran, bir anlamda sitenin bitmiş halinin marka tarafından algılanıp kısmen deneyimlenebileceği online sunumları tercih etmekteyiz.
+                
+                Wireframe onayı sonrasında projenin Front-End Developer’e evrensel Front-End standartlarında aktarımı için; brief döküman eşliğinde PSD versiyonunun, projede yer alan tüm sayfalar, alt sayfalar ve tüm alt kırılımları içerir şekilde iletilmesi (örneğin bir e-ticaret projesinde tasarlanması gereken sayfa sayısı minimum 35 adettir).
+                
+                Bu aşamada Front-End kısmında tasarımın html css’e dökülmesi olarak tanımladığımız kodlanması yapılır. UI kodlamasında ise günümüzdeki en önemli unsurlar; temiz kodlama, schema.org ve W3C School kriterlerine uyum, AMP ve Rich Snippet’in olması, kodlamanın LESS veya SASS gibi disiplinler kullanılarak dinamik olarak yazılması gibi ana başlıklarda sıralanabilir.
+                
+                front-end ve back-end nedir?
+                
+                Back-End ise adı üstünde kodlamanın arka yüz kodlaması için kullanılan bir yazılım tabiridir. Bu alanda nihai kullanıcı için görsel anlamda bir farklılık sezilmese de sitenin doğru çalışması anlamında Back-End Developer’a çok iş düşer. Tıpkı Front-End’de olduğu gibi; Back-End kısmında da elbette projeler tek bir yazılım geliştirici üzerinden ilerlemiyor. Projenin oluşumunda bir analiz uzmanının data mining yapması, proje road map’ini oluşturması, proje büyüklüğüne göre farklı title ve sayıda geliştirici ile oluşturulan ekibe görevlerini deklare etmesi gerekir. Burada proje yöneticisinin de farklı alanlarda minimum 7-8 proje bitirme tecrübesinin olması gerekli. Yeri gelmişken bazı yanlış algılara da değinmekte yarar var. Bir yazılım mühendisinin yazılım alanında her bir yazılım dilini veya framework’lerin tamamını sular seller gibi bilmesi diye bir şey söz konusu olamaz.
+                
+                Back-end nedir konusunda Steve Jobs’un kısa ve basit tanımına katılmamak elde değil:
+                
+                “Tasarım bir şeyin yalnızca nasıl göründüğü ve nasıl hissettirdiği ile ilgili değildir. Tasarım bir şeyin nasıl çalıştığıyla da alakalıdır..’’.
+                
+                Özetleyecek olursak Back-End; projenin mutfağı olan server side ile web sitesinin düzgün çalışmasını sağlayan arka plan kısmını kapsıyor ve ön yüz ile veri alışverişine cevap verip verileri saklıyor. Front-End ise; web sitesinde kullanıcıların gördüğü ve direkt etkileşimde bulundukları ön yüzü kapsayıp kullanıcının back-end katmanı ile veri alışverişi yapabilmesini sağlıyor.
+                
+                Örneğin bütün süreci bir tiyatro oyunu gibi düşünürsek; sahne arkasındaki tüm senaryo, kurgu, ezber vb. süreçleri arka yüz yani back-end sayıp, sahnede görünen oyunu da ön yüz yani front-end sayabiliriz.
+                
+                Back-End ve Front-End kavramlarından sonra, son olarak şunu belirtmekte fayda var; yakın geçmişe kadar web sitelerini tamamlayıp yayına aldığımızda proje bitmiş olarak kabul edilirdi. Günümüzde ise aslında her şey bitti dediğimiz yerde başlamakta. Tasarım bitmeyen bir serüvendir. Arka planda son kullanıcının hareketlerini ısı haritası üzerinden takip etmek; site paneli üzerinden kullanıcıların hangi adımlarda takıldığını, Analytics toolları üzerinden sayfanızda ne kadar kaldığı, hangi aşamalarda siteyi terk ettiklerini tespit etmek mümkün. Haliyle tasarımımızın kullanıcılara daha iyi bir deneyim yaşatmak için; Front-End kodlamasının scheme.org, W3C School, SEO friendly perspektifinde güncellenmesi gerekmekte. Bu durum Back-End tarafında da geçerli; yazılımın güncel teknolojiyle evrilen bir mimaride ve siber güvenlik gereksinimleri doğrultusunda güncelleniyor olması gereklidir.
+			</p>
+            <h1>Nasıl Front-end Developer Olurum ? </h1>
+            <p>
+                Eğer biraz araştırma yapıp Front End developer olmaya karar verdiyseniz ilk olarak Html dilini öğrenmelisiniz. Html bir işaretleme dilidir ve tarayıcılar bu kodları görsel nesnelere dönüştürürler. Daha sonra sırasıyla Css ve Javascript öğrenerek ufak ufak sektöre adım atmaya başlayabilirsiniz.
+
+                Kod yazarken W3C standartlarına dikkat etmeniz gerekmektedir. W3C standartları dünya çapında kabul görmüş kodlama standartlarıdır. Ayrıca projede back end tarafı ile de iletişim halinde olacağınız için Api kullanımını bilmeniz sizin için artı puan olarak hanenize yazılacaktır.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/J8_P1Cv7KNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:70vh;"></iframe>
+		</div>
+		<div class="containerFooter">
+			<div class="upFooter">
+				<div class="footerBox">
+					<ul class="myFooterNav">
+						<li><a href="./index.htm">Anasayfa</a></li>
+						<li><a href="./frontend.html">Front-end</a></li>
+						<li><a href="./plan.html">Plan</a></li>
+						<li><a href="./hakkımda.html">Hakkımda</a></li>
+						<li><a href="./iletisim.html">İletişim</a></li>
+					</ul>
+				</div>
+				<div class="footerBox">
+					<input type="email" class="footerEmailInput" placeholder="@ Bana Ulaşın">
+				</div>
+				<div class="footerBox">
+					<span>Eray TEKİN</span>
+				</div>
+			</div>
+			<div class="downFooter">
+				<div>ERAY TEKİN &copy; 2022 Tüm Hakları Saklıdır.</div>
+			</div>
+		</div>
+		<!-- Up -->
+		<a href="#up"><div class="upToHeader"><i class="fa-solid fa-angle-up"></i></div></a>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	<script src="./script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

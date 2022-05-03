@@ -1,0 +1,174 @@
+<html>
+<head>
+	<title>myWebsite</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div id="app">
+		<a name="up"></a>
+		<header>
+			<div class="myLogo"><a href="./index.htm">Eray TEKİN</a></div>
+			<nav>
+				<ul class="myNav">
+					<li><a href="./index.htm">Anasayfa</a></li>
+					<li><a href="./frontend.html">Front-end</a></li>
+					<li><a href="./plan.html">Plan</a></li>
+					<li><a href="./hakkımda.html">Hakkımda</a></li>
+					<li><a href="./iletisim.html">İletişim</a></li>
+				</ul>
+			</nav>
+			<i class="fa-solid fa-bars" id="hambMenu" @click="openToMenu"></i>
+		</header>
+		<!-- Responsive Menu -->
+		<div class="respMenu" v-if="isOpenMenu">
+			<div class="containerNav">
+				<ul class="respNav">
+					<li><a href="./index.htm">Anasayfa</a></li>
+					<li><a href="./frontend.html">Front-end</a></li>
+					<li><a href="./plan.html">Plan</a></li>
+					<li><a href="./hakkımda.html">Hakkımda</a></li>
+					<li><a href="./iletisim.html">İletişim</a></li>
+				</ul>
+			</div>	
+		</div> 
+		<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active" data-bs-interval="10000">
+			<img src="whitecolor.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			</div>
+			</div>
+			<div class="carousel-item" data-bs-interval="2000">
+			<img src="whitecolor.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			</div>
+			</div>
+			<div class="carousel-item">
+			<img src="whitecolor.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+		</div>
+		<div class="mycontainer">
+			<h1>ERAY TEKİN</h1>
+			<p>Front-end Developer</p>
+		</div>
+		<div class="container my-5">
+			<h1>WEB SİTE TASARLARKEN DİKKAT EDİLECEK HUSUSLAR</h1>
+			<p>Sadece saniyelerle yarışıyorsunuz unutmayın!
+
+				Biz internet kullanıcıları gerçekten sabırsızızdır, her hangi bir siteye girmemizden itibaren birkaç saniye içinde konunun ne olduğunu anlayamazsak arkamıza bile bakmadan çıkar gideriz, hem de bir daha geri gelmemek üzere.
+				
+				Bu sebepten web tasarımı olabildiğince sade ve anlaşılır olmalı ki siteye giren ziyaretçiler kolaylıkla sektörü, ne sattığını ve ya ne anlatmaya çalıştığını anlayabilsinler.
+				
+				Örneğin bir mücevher firması için web tasarımı yapılacaksa ana sayfa bannerlarında değerli takıları gösteren bir resim koymak siteye giren ziyaretçiyle etkili bir iletişim kurulmasını sağlayacaktır.
+				 
+				Web Tasarımı ile Kullanıcılar için Bir Harita olabilir ve onları yönlendirebilirsiniz!
+				
+				İnternet gezintisi yapan kullanıcılar sizin çok özenle sitenize koyduğunuz her şeyi tek tek okumaz aksine bu eylemden sıkılır. Bu sebeptendir ki sitenizde en çok neye dikkat edilmesini istiyorsanız o kısmı sitenizde ön plana çıkarmalı ve çekici hale getirmelisiniz.
+				
+				Web site tasarımına başlamadan önce kendinize bir harita çıkarmanız şart. Bir plan dahilinde her zaman en iyi sonucu alırsınız, nasıl evinize misafir olarak gelen arkadaşınıza rehberlik ederek oturacağı yere kadar refakat ediyorsak aynısı web site tasarımınız için de geçerli. Nereden başlayacağınızı bilmenin dışında ki diğer önemli konu ise kullandığınız font ve renklerin uyumudur. Kullanıcıyı düşünerek tasarladığınız işler hak ettiği değeri her zaman bulur.
+				 
+				Bir Web Sitesinde En çok Dikkat Çeken Kısım: Sol – Üst Köşe
+				
+				Bir sitede en çok dikkat edilen yer sol üst köşedir, bu da okuma alışkanlığımızdan gelir. Bu sebeple biz de dahil bir web siteye girdiğimizde sitenin her zaman en üst kısmına bakarız ve başlıklarla veya görsellerle yönlendirilmeyi bekleriz.
+				 
+				Bu nedenle yapılacak en önemli şeylerden biri, logoyu veya sitenin ismini sol köşede bir yerlere iliştirmek olacaktır. Logo ve site ismi kendi başına işi anlatmakta yetersiz kalıyor ise bir sloganla zenginleştirerek web sitesinin ne ile alakalı olduğunu vurgulayabilirsiniz.
+				 
+				Web Site Kullanıcıları Hangi Alanlar ile İlgilenir veya İlgilenmez
+				
+				Örnek verecek olursak kullanıcılar web sitelerinde yer alan ve neredeyse sitenin tamamını kapsayan reklam alanlarından pek hoşlanmazlar. Bu nedenle web site tasarımında bu alanları kullanmaktan kaçınmalısınız veya yerini düzgün ayarlamalısınız. Banner tarzı reklam alanları hem görüntü kirliğine sebep olur hem de web site kullanıcıları bu modellere aşina olduklarından tıklanma oranları sandığınızdan daha da düşüktür.
+				
+				Bu tarz alanlar oluşturmak yerine içerik içine yerleştirilmiş reklam modellerini tercih edebilirisiniz, renk uyumu da siteyle bir bütünlük kazanacak şekilde olursa yüksek tıklanma oranları elde etmek kolaylaşır.
+				
+				İçerik bölümlerinde yazıların kısa tutulması taraftarı olmanızı belirtmiştim fakat uzun yazılar da paylaşılacaksa muhakkak bölümlere ayrılmalıdırlar. Böylece kullanıcılar yazılara göz atarken başlıklarınızdan ve bölümlerden istedikleri içeriğe ulaşmaları daha kolay olacaktır.
+				 
+				Bazen İçerikler Web Tasarımından Daha Önemlidir:
+				
+				Web sitenizde amacınız bir mesaj vermekse eğer; hedef kitlenizin dikkatini çekmek adına çarpıcı açıklamalar yapmak resim kullanmaktan çok daha etkili bir faktör olabilir.
+				
+				Örneğin Facebook logosunda bir resim veya slogan kullanmıyor. Çünkü sitenin ne ile alakalı olduğunu “facebook” kelimesi gayet iyi anlatıyor bu nedenle bir resim kullanılsa bu algıya asla yakalayamazdı.
+				
+				Akıllıca oluşturulmuş bir slogan ya da dikkat çeken bir yazı başlığı her zaman karşımıza çıkan ve görmekten bıktığımız resimlerden çok daha fazla etkili olacaktır.
+				 
+				SEO Dostu Görseller Kullanmak:
+				
+				Elinizden geldiğinde yüksek çözünürlüklü görseller kullanın ve görsellerin sayfa adlarını SEO’ya uygun girmeyi unutmayın.
+				
+				İnternet üzerinden alışveriş yaparken o ürüne dokunamıyoruz bu nedenle ne kadar çok kaliteli görseller kullanırsanız gerçekliğiniz ve güvenilirliğiniz de o denli artar.
+				
+			</p>
+		</div>
+		<div class="mycontainer2">
+			<h1>HTML5 | CSS3</h1>
+			<p>JAVASCRIPT | VUE.JS | REACT.JS</p>
+		</div>
+		<div class="container d-flex my-5 justify-content-around flex-wrap">
+			<div class="myBox">
+				<h3>HTML NEDİR ? </h3>
+				<p>Web tasarım konusunda araştırma yapan hemen herkesin karşına çıkan temel kavram HTMLdir. Web sayfalarını oluşturma aşamasında kullanılan standart bir metin işaret dili olan HTML açılımı “Hyper Text Markup Language” olarak bilinir. Genel bilinen yanlış kanının aksine HTML bir programlama dili değildir. Daha açık anlatmak gerekirse, Chrome, Firefox, Yandex gibi tarayıcıların okuyup anlamlandırdığı dil HTML dilidir.</p>
+			</div>
+			<div class="myBox">
+				<h3>CSS NEDİR ? </h3>
+				<p>
+					İngilizcesi “Cascading Style Sheets” olan CSS açılımı, “Basamaklanmış Stil Katmanları” anlamına gelmektedir. “CSS nedir?” sorusunun cevabı ise web sitelerinin görsel olarak şekillendirilmesine olanak tanıyan ve kendine has kuralları olan bir tanım dilidir şeklinde ifade edilebilir. HTML ve JavaScript ile birlikte en temel web teknolojileri arasında bulunan CSS, web sayfaları üzerinde oldukça fazla görsel denetim sunar.
+				</p>
+			</div>
+			<div class="myBox">
+				<h3>JS NEDİR ? </h3>
+				<p>
+					1996 yılında JavaScript resmi olarak ECMAScript adını aldı ve ECMAScript 2 1998’de,  ECMAScript 3 ise 1999 yılında geldi. Bu da günümüzün JS’sine evrildi ve sadece farklı tarayıcılarda çalışmanın dışında aynı zamanda mobil ve masaüstü bilgisayarlar gibi farklı cihazlarda da çalışıyordu.
+
+					JavaScript o günden beri büyümeye devam etti ve 2016 yılı itibariyle web sitelerinin %92’si JS kullanmaya başladı.
+
+				</p>
+			</div>
+		</div>
+		<div class="containerFooter">
+			<div class="upFooter">
+				<div class="footerBox">
+					<ul class="myFooterNav">
+						<li><a href="./index.htm">Anasayfa</a></li>
+						<li><a href="./frontend.html">Front-end</a></li>
+						<li><a href="./plan.html">Plan</a></li>
+						<li><a href="./hakkımda.html">Hakkımda</a></li>
+						<li><a href="./iletisim.html">İletişim</a></li>
+					</ul>
+				</div>
+				<div class="footerBox">
+					<input type="email" class="footerEmailInput" placeholder="@ Bana Ulaşın">
+				</div>
+				<div class="footerBox">
+					<span>Eray TEKİN</span>
+				</div>
+			</div>
+			<div class="downFooter">
+				<div>ERAY TEKİN &copy; 2022 Tüm Hakları Saklıdır.</div>
+			</div>
+		</div>
+		<!-- Up -->
+		<a href="#up"><div class="upToHeader"><i class="fa-solid fa-angle-up"></i></div></a>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	<script src="./script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
